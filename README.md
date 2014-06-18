@@ -12,7 +12,6 @@ BVCropPhoto is image cropping library for iOS.
 
 ## Usage
 
-**Or use the crop view directly**
 ```objective-c
     self.cropPhotoView = [[BVCropPhotoView alloc] init];
     self.cropPhotoView.overlayImage = [UIImage imageNamed:@"crop-overlay-568h"];
