@@ -9,6 +9,4 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/vvbogdan/BVCropPhoto.git", :tag => "0.0.1" }
   s.source_files  = "BVCropPhoto", "BVCropPhoto/**/*.{h,m}"
-  spec.framework    = 'SystemConfiguration'
-  spec.requires_arc = true
 end
