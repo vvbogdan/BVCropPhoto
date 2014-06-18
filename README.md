@@ -34,4 +34,4 @@ UIImage * croppedImage = self.cropPhotoView.croppedImage;
 [GPL]: http://www.gnu.org/licenses/gpl.html
 [BSD]: http://opensource.org/licenses/bsd-license.php
 
-PEPhotoCropEditor is available under the [MIT license][MIT]. See the LICENSE file for more info.
+BVCropPhoto is available under the [MIT license][MIT]. See the LICENSE file for more info.
