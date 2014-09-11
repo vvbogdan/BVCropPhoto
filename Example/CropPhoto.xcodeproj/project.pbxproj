@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C724DE219C1C48B00274B5C /* DVCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DDF19C1C48B00274B5C /* DVCropViewController.m */; };
+		1C724DE319C1C48B00274B5C /* DVGCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DE119C1C48B00274B5C /* DVGCropView.m */; };
 		69EF5D471951950D001E94C7 /* BVCropPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF5D441951950D001E94C7 /* BVCropPhotoView.m */; };
 		7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E6827D434C5FF0974103E /* BVAppDelegate.m */; };
 		7A6E62AB5434DA93F39B38BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
@@ -19,7 +21,6 @@
 		7A6E6A87678A97A6220AEC70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
 		7A6E6B64030ACC71266002A4 /* crop-overlay-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E64F7FCBA120E6CFFB188 /* crop-overlay-568h@2x.png */; };
 		7A6E6C5B3D1CB6351086A9D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6A0387A65D13F1B13599 /* UIKit.framework */; };
-		7A6E6C725FE42343764AE6C7 /* BVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E6A7EBB282426C20627CA /* BVViewController.m */; };
 		7A6E6C8FF004B33A21A4F9C6 /* CropPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E651EADAE7A0A488101B0 /* CropPhotoTests.m */; };
 		7A6E6CAB3A5EC30DBCA2938F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E658C74CE5AB8766BB979 /* main.m */; };
 		7A6E6EBE05EB3792D2CE2414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E60F158D608FC170A8448 /* InfoPlist.strings */; };
@@ -38,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C724DDE19C1C48B00274B5C /* DVCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCropViewController.h; sourceTree = "<group>"; };
+		1C724DDF19C1C48B00274B5C /* DVCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCropViewController.m; sourceTree = "<group>"; };
+		1C724DE019C1C48B00274B5C /* DVGCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVGCropView.h; sourceTree = "<group>"; };
+		1C724DE119C1C48B00274B5C /* DVGCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGCropView.m; sourceTree = "<group>"; };
 		69EF5D431951950D001E94C7 /* BVCropPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropPhotoView.h; sourceTree = "<group>"; };
 		69EF5D441951950D001E94C7 /* BVCropPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVCropPhotoView.m; sourceTree = "<group>"; };
 		7A6E60AD72699E31F30D3B3F /* BVResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVResultViewController.h; sourceTree = "<group>"; };
@@ -55,12 +60,10 @@
 		7A6E65F456F3F6C0CF1580EA /* CropPhoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CropPhoto-Prefix.pch"; sourceTree = "<group>"; };
 		7A6E661395848168FB22BB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A6E673DFE69BD0600644EBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7A6E677185408BCB70C1D2BC /* BVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVViewController.h; sourceTree = "<group>"; };
 		7A6E67D9D757DF5362F6AD5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A6E6827D434C5FF0974103E /* BVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVAppDelegate.m; sourceTree = "<group>"; };
 		7A6E6A0387A65D13F1B13599 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A6E6A2DE46077633FB58B11 /* CropPhoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "CropPhoto-Info.plist"; sourceTree = "<group>"; };
-		7A6E6A7EBB282426C20627CA /* BVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVViewController.m; sourceTree = "<group>"; };
 		7A6E6D0099DBF14228483C8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A6E6F23A01531EE3DADC6F7 /* CropPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "CropPhotoTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,12 +165,10 @@
 		7A6E6BAEE79629CFCC7A38BE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7A6E677185408BCB70C1D2BC /* BVViewController.h */,
-				7A6E6A7EBB282426C20627CA /* BVViewController.m */,
-				7A6E6827D434C5FF0974103E /* BVAppDelegate.m */,
 				7A6E6599D56BB87B7A8AC85C /* BVAppDelegate.h */,
-				7A6E60DBBFC7BB0844F83C7C /* BVResultViewController.m */,
+				7A6E6827D434C5FF0974103E /* BVAppDelegate.m */,
 				7A6E60AD72699E31F30D3B3F /* BVResultViewController.h */,
+				7A6E60DBBFC7BB0844F83C7C /* BVResultViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -177,6 +178,10 @@
 			children = (
 				7A6E6A6C662A61407EF06FC1 /* Supporting Files */,
 				7A6E673DFE69BD0600644EBD /* Images.xcassets */,
+				1C724DDE19C1C48B00274B5C /* DVCropViewController.h */,
+				1C724DDF19C1C48B00274B5C /* DVCropViewController.m */,
+				1C724DE019C1C48B00274B5C /* DVGCropView.h */,
+				1C724DE119C1C48B00274B5C /* DVGCropView.m */,
 				7A6E6BAEE79629CFCC7A38BE /* Classes */,
 				7A6E64DAF787FC07316B593F /* Resources */,
 			);
@@ -238,6 +243,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = BogdanVV;
+				TargetAttributes = {
+					7A6E62BF62E81B5DB6EB11F9 = {
+						DevelopmentTeam = VVU5C37FM9;
+					};
+				};
 			};
 			buildConfigurationList = 7A6E630143A495949E4A9E9C /* Build configuration list for PBXProject "CropPhoto" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -286,7 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6E6CAB3A5EC30DBCA2938F /* main.m in Sources */,
-				7A6E6C725FE42343764AE6C7 /* BVViewController.m in Sources */,
+				1C724DE319C1C48B00274B5C /* DVGCropView.m in Sources */,
+				1C724DE219C1C48B00274B5C /* DVCropViewController.m in Sources */,
 				69EF5D471951950D001E94C7 /* BVCropPhotoView.m in Sources */,
 				7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */,
 				7A6E67A216019DFEA5E58C67 /* BVResultViewController.m in Sources */,
@@ -336,10 +347,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhoto/CropPhoto-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -364,10 +378,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhoto/CropPhoto-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
