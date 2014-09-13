@@ -1,7 +1,7 @@
-BVCropPhoto
+DVCropViewController
 =================
 
-BVCropPhoto is image cropping library for iOS.
+DVCropViewController is image cropping library for iOS.
 
 ## System requirements
 - iOS 5.0 or higher
@@ -13,17 +13,18 @@ BVCropPhoto is image cropping library for iOS.
 ## Usage
 
 ```objective-c
-    self.cropPhotoView = [[BVCropPhotoView alloc] init];
-    self.cropPhotoView.overlayImage = [UIImage imageNamed:@"crop-overlay-568h"];
-    self.cropPhotoView.sourceImage = [UIImage imageNamed:@"example1.jpg"];
-    self.cropPhotoView.cropSize = CGSizeMake(260, 286);
-    [self.view addSubview:self.cropPhotoView];
+    DVCropViewController *controller = [[DVCropViewController alloc] init];
+    controller.delegate = self;
+    controller.sourceImage = [UIImage imageNamed:@"example1.jpg"];
+    controller.cropSize = CGSizeMake(260, 286);
 ```
 
 ### Get the cropped image
 **retrieve from view directly**
 ```objective-c
-UIImage * croppedImage = self.cropPhotoView.croppedImage;
+-(void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
+    self.imageView.image = croppedImage;
+}
 ```
 
 ## License

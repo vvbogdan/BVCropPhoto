@@ -5,8 +5,9 @@
 //  Copyright (c) 2014. All rights reserved.
 
 #import "BVResultViewController.h"
+#import "DVCropViewController.h"
 
-@interface BVResultViewController ()
+@interface BVResultViewController () <DVCropViewControllerDelegate>
 
 @property (nonatomic, strong) UIImageView * imageView;
 @property (nonatomic, strong) UIImage * image;
@@ -35,19 +36,24 @@
         UIImageView * imageView = [[UIImageView alloc] init];
         imageView.contentMode = UIViewContentModeCenter;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        imageView.image = self.image;
+        imageView.image = [UIImage imageNamed:@"example1.jpg"];
         imageView;
     });
     [self.view addSubview:self.imageView];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(doneAction:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(selectAction:)];
 
 
 }
 
-
-- (void)doneAction:(id)doneAction {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (void)selectAction:(id)doneAction {
+    DVCropViewController *controller = [[DVCropViewController alloc] init];
+    controller.delegate = self;
+    controller.sourceImage = [UIImage imageNamed:@"example1.jpg"];
+    controller.cropSize = CGSizeMake(260, 286);
+    
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 
@@ -57,5 +63,16 @@
     self.imageView.frame = self.view.bounds;
 }
 
+#pragma DVCropViewController Delegate
+
+-(void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
+    self.imageView.image = croppedImage;
+
+    [sender.navigationController dismissViewControllerAnimated:NO completion:nil];
+}
+
+-(void)cropViewControllerDidCancel:(DVCropViewController *)sender{
+    
+}
 
 @end

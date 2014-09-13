@@ -7,13 +7,13 @@
 //
 
 #import "BVAppDelegate.h"
-#import "BVViewController.h"
+#import "BVResultViewController.h"
 
 @implementation BVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[BVViewController alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[BVResultViewController alloc] init]];
     [self.window makeKeyAndVisible];
 
     // Override point for customization after application launch.
