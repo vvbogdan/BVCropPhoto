@@ -30,8 +30,7 @@ BVCropPhoto is image cropping library for iOS.
     [self.cropPhotoView updateOverlayView:overlay];
 ```
 
-### Get the cropped image
-**Retrieve from view directly**
+#### Get the cropped image
 ```objective-c
 UIImage * croppedImage = self.cropPhotoView.croppedImage;
 ```
