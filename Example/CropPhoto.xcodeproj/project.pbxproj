@@ -13,31 +13,16 @@
 		69FA45061DC295DD000DFECF /* BVCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA45031DC295DD000DFECF /* BVCropViewController.m */; };
 		7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E6827D434C5FF0974103E /* BVAppDelegate.m */; };
 		7A6E62AB5434DA93F39B38BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
-		7A6E6447EDE009B62611D6F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6A0387A65D13F1B13599 /* UIKit.framework */; };
 		7A6E656C2AEE0DFCF5F4C1E2 /* crop-overlay-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E6222DA57DC3B0EC94DAD /* crop-overlay-568h.png */; };
-		7A6E65B208DA64F2130C9D09 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E635C80CF7B0F98A5A3EA /* XCTest.framework */; };
 		7A6E65E5BF2D3ACC8499516F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E673DFE69BD0600644EBD /* Images.xcassets */; };
 		7A6E67419AD23BB92F777B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E633B1009A005E346F737 /* CoreGraphics.framework */; };
 		7A6E67A216019DFEA5E58C67 /* BVResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E60DBBFC7BB0844F83C7C /* BVResultViewController.m */; };
-		7A6E6A87678A97A6220AEC70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
 		7A6E6B64030ACC71266002A4 /* crop-overlay-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E64F7FCBA120E6CFFB188 /* crop-overlay-568h@2x.png */; };
 		7A6E6C5B3D1CB6351086A9D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6A0387A65D13F1B13599 /* UIKit.framework */; };
-		7A6E6C8FF004B33A21A4F9C6 /* CropPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E651EADAE7A0A488101B0 /* CropPhotoTests.m */; };
 		7A6E6CAB3A5EC30DBCA2938F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E658C74CE5AB8766BB979 /* main.m */; };
-		7A6E6EBE05EB3792D2CE2414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E60F158D608FC170A8448 /* InfoPlist.strings */; };
 		7A6E6F279C6D4CE6A13DDCBD /* example1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E6124C8FD46947C7BCEDF /* example1.jpg */; };
 		7A6E6F2E7CD2BEF1844B519C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E69F01B337358D8E361B1 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7A6E6A2FB13D7E73249CC34A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A6E657715F52269E8B42400 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7A6E62BF62E81B5DB6EB11F9;
-			remoteInfo = CropPhoto;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		69EF5D431951950D001E94C7 /* BVCropPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropPhotoView.h; sourceTree = "<group>"; };
@@ -53,21 +38,17 @@
 		7A6E6222DA57DC3B0EC94DAD /* crop-overlay-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crop-overlay-568h.png"; sourceTree = "<group>"; };
 		7A6E633B1009A005E346F737 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7A6E635C80CF7B0F98A5A3EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7A6E63E292E74725D115912A /* CropPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6E64A3087D24BBC3A8AA11 /* CropPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6E64F7FCBA120E6CFFB188 /* crop-overlay-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crop-overlay-568h@2x.png"; sourceTree = "<group>"; };
-		7A6E651EADAE7A0A488101B0 /* CropPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropPhotoTests.m; sourceTree = "<group>"; };
 		7A6E658C74CE5AB8766BB979 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A6E6599D56BB87B7A8AC85C /* BVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVAppDelegate.h; sourceTree = "<group>"; };
 		7A6E65F456F3F6C0CF1580EA /* CropPhoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CropPhoto-Prefix.pch"; sourceTree = "<group>"; };
 		7A6E661395848168FB22BB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A6E673DFE69BD0600644EBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7A6E67D9D757DF5362F6AD5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A6E6827D434C5FF0974103E /* BVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVAppDelegate.m; sourceTree = "<group>"; };
 		7A6E6A0387A65D13F1B13599 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A6E6A2DE46077633FB58B11 /* CropPhoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "CropPhoto-Info.plist"; sourceTree = "<group>"; };
 		7A6E6D0099DBF14228483C8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7A6E6F23A01531EE3DADC6F7 /* CropPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "CropPhotoTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,16 +59,6 @@
 				7A6E62AB5434DA93F39B38BC /* Foundation.framework in Frameworks */,
 				7A6E67419AD23BB92F777B67 /* CoreGraphics.framework in Frameworks */,
 				7A6E6C5B3D1CB6351086A9D6 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A6E6F61C0C132911CEF4866 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A6E65B208DA64F2130C9D09 /* XCTest.framework in Frameworks */,
-				7A6E6A87678A97A6220AEC70 /* Foundation.framework in Frameworks */,
-				7A6E6447EDE009B62611D6F9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,15 +90,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7A6E67DE86CE9B72F4946CC0 /* CropPhotoTests */ = {
-			isa = PBXGroup;
-			children = (
-				7A6E6A816BB8555EE2A658A2 /* Supporting Files */,
-				7A6E651EADAE7A0A488101B0 /* CropPhotoTests.m */,
-			);
-			path = CropPhotoTests;
-			sourceTree = "<group>";
-		};
 		7A6E6A25F7B09F6F6DC49768 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,20 +113,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7A6E6A816BB8555EE2A658A2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A6E6F23A01531EE3DADC6F7 /* CropPhotoTests-Info.plist */,
-				7A6E60F158D608FC170A8448 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		7A6E6B0088416C4EF8775657 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7A6E64A3087D24BBC3A8AA11 /* CropPhoto.app */,
-				7A6E63E292E74725D115912A /* CropPhotoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,7 +149,6 @@
 				7A6E6B0088416C4EF8775657 /* Products */,
 				7A6E6A25F7B09F6F6DC49768 /* Frameworks */,
 				7A6E6F7DDB4552A1ECAE2942 /* CropPhoto */,
-				7A6E67DE86CE9B72F4946CC0 /* CropPhotoTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,24 +172,6 @@
 			productReference = 7A6E64A3087D24BBC3A8AA11 /* CropPhoto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7A6E6767427A6159779AFC49 /* CropPhotoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A6E6433E982516539313D70 /* Build configuration list for PBXNativeTarget "CropPhotoTests" */;
-			buildPhases = (
-				7A6E6F38585FFF6F1F927341 /* Sources */,
-				7A6E6F61C0C132911CEF4866 /* Frameworks */,
-				7A6E6825C0A701F79F804E5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7A6E6B2C2993F86EE341ACC8 /* PBXTargetDependency */,
-			);
-			name = CropPhotoTests;
-			productName = CropPhotoTests;
-			productReference = 7A6E63E292E74725D115912A /* CropPhotoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				7A6E62BF62E81B5DB6EB11F9 /* CropPhoto */,
-				7A6E6767427A6159779AFC49 /* CropPhotoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,14 +208,6 @@
 				69FA45001DC24C58000DFECF /* LaunchScreen.storyboard in Resources */,
 				7A6E6B64030ACC71266002A4 /* crop-overlay-568h@2x.png in Resources */,
 				7A6E6F279C6D4CE6A13DDCBD /* example1.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A6E6825C0A701F79F804E5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A6E6EBE05EB3792D2CE2414 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,33 +227,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A6E6F38585FFF6F1F927341 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A6E6C8FF004B33A21A4F9C6 /* CropPhotoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7A6E6B2C2993F86EE341ACC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7A6E62BF62E81B5DB6EB11F9 /* CropPhoto */;
-			targetProxy = 7A6E6A2FB13D7E73249CC34A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		7A6E60F158D608FC170A8448 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A6E67D9D757DF5362F6AD5B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		7A6E69F01B337358D8E361B1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,21 +256,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		7A6E61CA471BEDADED8AF308 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
-				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -424,21 +309,6 @@
 			};
 			name = Release;
 		};
-		7A6E6BAD5ED842C6E6C64659 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
-				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		7A6E6C47FD1EB35EBCF60D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,15 +355,6 @@
 			buildConfigurations = (
 				7A6E6C47FD1EB35EBCF60D4A /* Debug */,
 				7A6E6B8B3201EBF51E3DBB17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7A6E6433E982516539313D70 /* Build configuration list for PBXNativeTarget "CropPhotoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A6E61CA471BEDADED8AF308 /* Debug */,
-				7A6E6BAD5ED842C6E6C64659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
