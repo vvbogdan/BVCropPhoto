@@ -10,6 +10,7 @@
 		1C724DE219C1C48B00274B5C /* DVCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DDF19C1C48B00274B5C /* DVCropViewController.m */; };
 		1C724DE319C1C48B00274B5C /* DVGCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DE119C1C48B00274B5C /* DVGCropView.m */; };
 		69EF5D471951950D001E94C7 /* BVCropPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF5D441951950D001E94C7 /* BVCropPhotoView.m */; };
+		69FA45001DC24C58000DFECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA44FF1DC24C58000DFECF /* LaunchScreen.storyboard */; };
 		7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E6827D434C5FF0974103E /* BVAppDelegate.m */; };
 		7A6E62AB5434DA93F39B38BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
 		7A6E6447EDE009B62611D6F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6A0387A65D13F1B13599 /* UIKit.framework */; };
@@ -45,6 +46,7 @@
 		1C724DE119C1C48B00274B5C /* DVGCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGCropView.m; sourceTree = "<group>"; };
 		69EF5D431951950D001E94C7 /* BVCropPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropPhotoView.h; sourceTree = "<group>"; };
 		69EF5D441951950D001E94C7 /* BVCropPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVCropPhotoView.m; sourceTree = "<group>"; };
+		69FA44FF1DC24C58000DFECF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A6E60AD72699E31F30D3B3F /* BVResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVResultViewController.h; sourceTree = "<group>"; };
 		7A6E60DBBFC7BB0844F83C7C /* BVResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVResultViewController.m; sourceTree = "<group>"; };
 		7A6E6124C8FD46947C7BCEDF /* example1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example1.jpg; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				7A6E6222DA57DC3B0EC94DAD /* crop-overlay-568h.png */,
 				7A6E64F7FCBA120E6CFFB188 /* crop-overlay-568h@2x.png */,
 				7A6E6124C8FD46947C7BCEDF /* example1.jpg */,
+				69FA44FF1DC24C58000DFECF /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,12 +245,8 @@
 		7A6E657715F52269E8B42400 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = BogdanVV;
-				TargetAttributes = {
-					7A6E62BF62E81B5DB6EB11F9 = {
-						DevelopmentTeam = VVU5C37FM9;
-					};
-				};
 			};
 			buildConfigurationList = 7A6E630143A495949E4A9E9C /* Build configuration list for PBXProject "CropPhoto" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -275,6 +274,7 @@
 				7A6E6F2E7CD2BEF1844B519C /* InfoPlist.strings in Resources */,
 				7A6E65E5BF2D3ACC8499516F /* Images.xcassets in Resources */,
 				7A6E656C2AEE0DFCF5F4C1E2 /* crop-overlay-568h.png in Resources */,
+				69FA45001DC24C58000DFECF /* LaunchScreen.storyboard in Resources */,
 				7A6E6B64030ACC71266002A4 /* crop-overlay-568h@2x.png in Resources */,
 				7A6E6F279C6D4CE6A13DDCBD /* example1.jpg in Resources */,
 			);
@@ -346,12 +346,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhoto/CropPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nowytech.CropPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -368,6 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.com.softteam.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -377,12 +380,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhoto/CropPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nowytech.CropPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -402,20 +407,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -431,6 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.com.softteam.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -449,13 +460,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -468,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
