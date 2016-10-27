@@ -4,43 +4,55 @@ BVCropPhoto
 BVCropPhoto is image cropping library for iOS.
 
 ## System requirements
-- iOS 5.0 or higher
+- iOS 9.0 or higher
 
 ## Installation
-### CocoaPods
+**CocoaPods**
+
 `pod 'BVCropPhoto'`
 
 ## Usage
-
+### BVCropPhotoView
+**Using with image overlay**
 ```objective-c
     self.cropPhotoView = [[BVCropPhotoView alloc] init];
     self.cropPhotoView.overlayImage = [UIImage imageNamed:@"crop-overlay-568h"];
     self.cropPhotoView.sourceImage = [UIImage imageNamed:@"example1.jpg"];
     self.cropPhotoView.cropSize = CGSizeMake(260, 286);
-    [self.view addSubview:self.cropPhotoView];
+```
+**Using with custom overlay view**
+
+```objective-c
+    self.cropPhotoView = [[BVCropPhotoView alloc] init];
+    self.cropPhotoView.sourceImage = [UIImage imageNamed:@"example1.jpg"];
+    self.cropPhotoView.cropSize = CGSizeMake(260, 286);
+    BVCropPhotoOverlayView * overlay = [[BVCropPhotoOverlayView alloc] initWithCropSize:self.cropPhotoView.cropSize];
+    [self.cropPhotoView updateOverlayView:overlay];
 ```
 
 ### Get the cropped image
-**retrieve from view directly**
+**Retrieve from view directly**
 ```objective-c
 UIImage * croppedImage = self.cropPhotoView.croppedImage;
 ```
 
-## Example
+### BVCropViewController
 
 #### Init
 
 ```objective-c
-    DVCropViewController *controller = [[DVCropViewController alloc] init];
+    BVCropViewController *controller = [[BVCropViewController alloc] init];
+    controller.cropSize = CGSizeMake(260, 286);
+    controller.cropPhotoView.maximumZoomScale = 10;
+    [controller.cropPhotoView updateOverlayView:[[BVCropPhotoOverlayView alloc] initWithCropSize:CGSizeMake(260, 286)]];
     controller.delegate = self;
     controller.sourceImage = [UIImage imageNamed:@"example1.jpg"];
-    controller.cropSize = CGSizeMake(260, 286);
 ```
 
 #### Get the cropped image
 
 ```objective-c
--(void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
+- (void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
     self.imageView.image = croppedImage;
 }
 ```
