@@ -5,9 +5,11 @@
 //  Copyright (c) 2014. All rights reserved.
 
 #import "BVResultViewController.h"
-#import "DVCropViewController.h"
+#import "BVCropViewController.h"
+#import "BVCropPhotoView.h"
+#import "BVCropPhotoOverlayView.h"
 
-@interface BVResultViewController () <DVCropViewControllerDelegate>
+@interface BVResultViewController () <BVCropViewControllerDelegate>
 
 @property (nonatomic, strong) UIImageView * imageView;
 @property (nonatomic, strong) UIImage * image;
@@ -36,7 +38,7 @@
         UIImageView * imageView = [[UIImageView alloc] init];
         imageView.contentMode = UIViewContentModeCenter;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        imageView.image = [UIImage imageNamed:@"example1.jpg"];
+        imageView.image = self.image;
         imageView;
     });
     [self.view addSubview:self.imageView];
@@ -47,10 +49,12 @@
 }
 
 - (void)selectAction:(id)doneAction {
-    DVCropViewController *controller = [[DVCropViewController alloc] init];
-    controller.delegate = self;
-    controller.sourceImage = [UIImage imageNamed:@"example1.jpg"];
+    BVCropViewController *controller = [[BVCropViewController alloc] init];
     controller.cropSize = CGSizeMake(260, 286);
+    controller.cropPhotoView.maximumZoomScale = 100;
+    [controller.cropPhotoView updateOverlayView:[[BVCropPhotoOverlayView alloc] initWithCropSize:controller.cropSize]];
+    controller.delegate = self;
+    controller.sourceImage = self.image;
     
     UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
     [self presentViewController:navigationController animated:YES completion:nil];
@@ -65,14 +69,16 @@
 
 #pragma DVCropViewController Delegate
 
--(void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
+-(void)cropViewControllerDidCrop:(BVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
     self.imageView.image = croppedImage;
 
-    [sender.navigationController dismissViewControllerAnimated:NO completion:nil];
+    [sender.navigationController dismissViewControllerAnimated:YES
+                                                    completion:nil];
 }
 
--(void)cropViewControllerDidCancel:(DVCropViewController *)sender{
-    
+-(void)cropViewControllerDidCancel:(BVCropViewController *)sender{
+    [sender dismissViewControllerAnimated:YES
+                               completion:nil];
 }
 
 @end

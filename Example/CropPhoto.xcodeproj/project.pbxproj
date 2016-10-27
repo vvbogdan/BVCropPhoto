@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C724DE219C1C48B00274B5C /* DVCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DDF19C1C48B00274B5C /* DVCropViewController.m */; };
-		1C724DE319C1C48B00274B5C /* DVGCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C724DE119C1C48B00274B5C /* DVGCropView.m */; };
 		69EF5D471951950D001E94C7 /* BVCropPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF5D441951950D001E94C7 /* BVCropPhotoView.m */; };
 		69FA45001DC24C58000DFECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA44FF1DC24C58000DFECF /* LaunchScreen.storyboard */; };
+		69FA45051DC295DD000DFECF /* BVCropPhotoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA45021DC295DD000DFECF /* BVCropPhotoOverlayView.m */; };
+		69FA45061DC295DD000DFECF /* BVCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA45031DC295DD000DFECF /* BVCropViewController.m */; };
 		7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E6827D434C5FF0974103E /* BVAppDelegate.m */; };
 		7A6E62AB5434DA93F39B38BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6D0099DBF14228483C8E /* Foundation.framework */; };
 		7A6E6447EDE009B62611D6F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6E6A0387A65D13F1B13599 /* UIKit.framework */; };
@@ -40,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C724DDE19C1C48B00274B5C /* DVCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCropViewController.h; sourceTree = "<group>"; };
-		1C724DDF19C1C48B00274B5C /* DVCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCropViewController.m; sourceTree = "<group>"; };
-		1C724DE019C1C48B00274B5C /* DVGCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVGCropView.h; sourceTree = "<group>"; };
-		1C724DE119C1C48B00274B5C /* DVGCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGCropView.m; sourceTree = "<group>"; };
 		69EF5D431951950D001E94C7 /* BVCropPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropPhotoView.h; sourceTree = "<group>"; };
 		69EF5D441951950D001E94C7 /* BVCropPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVCropPhotoView.m; sourceTree = "<group>"; };
 		69FA44FF1DC24C58000DFECF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69FA45011DC295DD000DFECF /* BVCropPhotoOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropPhotoOverlayView.h; sourceTree = "<group>"; };
+		69FA45021DC295DD000DFECF /* BVCropPhotoOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVCropPhotoOverlayView.m; sourceTree = "<group>"; };
+		69FA45031DC295DD000DFECF /* BVCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVCropViewController.m; sourceTree = "<group>"; };
+		69FA45041DC295DD000DFECF /* BVCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVCropViewController.h; sourceTree = "<group>"; };
 		7A6E60AD72699E31F30D3B3F /* BVResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVResultViewController.h; sourceTree = "<group>"; };
 		7A6E60DBBFC7BB0844F83C7C /* BVResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVResultViewController.m; sourceTree = "<group>"; };
 		7A6E6124C8FD46947C7BCEDF /* example1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example1.jpg; sourceTree = "<group>"; };
@@ -97,6 +97,10 @@
 		69EF5D421951950D001E94C7 /* BVCropPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				69FA45011DC295DD000DFECF /* BVCropPhotoOverlayView.h */,
+				69FA45021DC295DD000DFECF /* BVCropPhotoOverlayView.m */,
+				69FA45031DC295DD000DFECF /* BVCropViewController.m */,
+				69FA45041DC295DD000DFECF /* BVCropViewController.h */,
 				69EF5D431951950D001E94C7 /* BVCropPhotoView.h */,
 				69EF5D441951950D001E94C7 /* BVCropPhotoView.m */,
 			);
@@ -181,10 +185,6 @@
 			children = (
 				7A6E6A6C662A61407EF06FC1 /* Supporting Files */,
 				7A6E673DFE69BD0600644EBD /* Images.xcassets */,
-				1C724DDE19C1C48B00274B5C /* DVCropViewController.h */,
-				1C724DDF19C1C48B00274B5C /* DVCropViewController.m */,
-				1C724DE019C1C48B00274B5C /* DVGCropView.h */,
-				1C724DE119C1C48B00274B5C /* DVGCropView.m */,
 				7A6E6BAEE79629CFCC7A38BE /* Classes */,
 				7A6E64DAF787FC07316B593F /* Resources */,
 			);
@@ -245,7 +245,6 @@
 		7A6E657715F52269E8B42400 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = BogdanVV;
 			};
 			buildConfigurationList = 7A6E630143A495949E4A9E9C /* Build configuration list for PBXProject "CropPhoto" */;
@@ -296,10 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6E6CAB3A5EC30DBCA2938F /* main.m in Sources */,
-				1C724DE319C1C48B00274B5C /* DVGCropView.m in Sources */,
-				1C724DE219C1C48B00274B5C /* DVCropViewController.m in Sources */,
+				69FA45051DC295DD000DFECF /* BVCropPhotoOverlayView.m in Sources */,
 				69EF5D471951950D001E94C7 /* BVCropPhotoView.m in Sources */,
 				7A6E6010E106D0191171A846 /* BVAppDelegate.m in Sources */,
+				69FA45061DC295DD000DFECF /* BVCropViewController.m in Sources */,
 				7A6E67A216019DFEA5E58C67 /* BVResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +369,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "ua.com.softteam.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -407,18 +405,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -441,7 +434,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CropPhoto/CropPhoto-Prefix.pch";
 				INFOPLIST_FILE = "CropPhotoTests/CropPhotoTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "ua.com.softteam.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -460,19 +452,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",

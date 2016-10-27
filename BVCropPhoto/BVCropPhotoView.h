@@ -6,17 +6,26 @@
 
 @interface BVCropPhotoView : UIView
 // crop for size
-@property (nonatomic, assign) CGSize cropSize;
-// overlay
-@property (nonatomic, strong) UIImage * overlayImage;
+@property(nonatomic, assign) CGSize cropSize;
 // source image
-@property (nonatomic, strong) UIImage * sourceImage;
+@property(nonatomic, strong) UIImage *sourceImage;
 // default 5
-@property (nonatomic, assign) CGFloat maximumZoomScale;
+@property(nonatomic, assign) CGFloat maximumZoomScale;
 
 - (id)initWithSourceImage:(UIImage *)image;
 
 // cropped image with cropSize
 - (UIImage *)croppedImage;
+
+// update Overlay View
+- (void)updateOverlayView:(UIView *)view;
+
+@end
+
+
+@interface BVCropPhotoView (Deprecated)
+
+// overlay
+@property(nonatomic, strong) UIImage *overlayImage;
 
 @end
