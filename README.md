@@ -51,7 +51,7 @@ UIImage * croppedImage = self.cropPhotoView.croppedImage;
 #### Get the cropped image
 
 ```objective-c
-- (void)cropViewControllerDidCrop:(DVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
+- (void)cropViewControllerDidCrop:(BVCropViewController *)sender croppedImage:(UIImage *)croppedImage{
     self.imageView.image = croppedImage;
 }
 ```
